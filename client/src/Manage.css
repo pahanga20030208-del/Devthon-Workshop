@@ -1,0 +1,26 @@
+.manage-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.expense-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  padding: 16px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.expense-card span {
+  font-weight: bold;
+  color: #facc15;
+}
+
+.delete {
+  background: #ef4444;
+  color: white;
+  margin-top: 8px;
+}
