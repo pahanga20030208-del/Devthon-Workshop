@@ -63,12 +63,15 @@ function ExpenseForm() {
   });
 
   const submit = () => {
-    fetch("http://localhost:5000/expenses", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    }).then(() => alert("Expense added"));
-  };
+  fetch("http://localhost:5000/expenses", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  }).then(() => {
+    alert("Expense added");
+    setData({ title: "", amount: "", category: "Food", paymentMethod: "Cash", date: "", notes: "" });
+  });
+};
 
   return (
     <div className="container">
